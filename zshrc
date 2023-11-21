@@ -6,6 +6,7 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ssh='TERM=xterm-256color ssh'
+alias vim=nvim
 
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
