@@ -14,11 +14,8 @@ set tabstop=2
 set shiftwidth=2
 
 " Old buffer map config pre NERDTree 
-"map <Leader>n :bn<cr>
-"map <Leader>p :bp<cr>
 "map <C-t> :new<cr>:term<cr>
-
-tnoremap <Esc> <C-\><C-n>
+"tnoremap <Esc> <C-\><C-n>
 
 call plug#begin()
 
@@ -44,7 +41,9 @@ call plug#end()
 
 autocmd vimenter * ++nested colorscheme gruvbox
 
-nnoremap <leader>n :NERDTreeFocus<CR>
+map <Leader>n :bn<cr>
+map <Leader>p :bp<cr>
+"nnoremap <leader>n :NERDTreeFocus<CR> not sure why i'd want this tbh
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
